@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzería Don Luigi e Ivanovich</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/mediaquery.css">
+  <link rel="stylesheet" href="./assets/animaciones.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+
+    <i class="fa-solid fa-pizza-slice" style="color: #ff0000;">Pizzas Don Luigi e Ivanovich</i>
+
+    <nav class="navbar">
+
+      <label for="menu-toggle" class="menu-label">
+        <i class="fa-solid fa-bars" style="color: #ff0000;"></i>
+      </label>
+      <input type="checkbox" id="menu-toggle">
+
+      <ul class="navbar-list">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="https://www.pedidosya.com.ar/">Pedidos Por Pedidos Ya</a></li>
+        <li><a href="#Historia y Acerca de nosotros">Historia y Acerca de nosotros</a></li>
+        <li><a href="#Menu">Menu</a></li>
+        <li><a href="#Locales y Telefono">Locales</a></li>
+        <li><a href="#Locales y Telefono">Telefono</a></li>
+      </ul>
+      <div id="ybarAccountProfile" class="_yb_15ve4 _yb_1cxyj  _yb_9m0ig   "> <a class="_yb_cv4rx" tabindex="" data-ylk="sec:ybar;slk:sign-in;elm:signin;subsec:settings;itc:0;tar:login.yahoo.com" data-redirect-params="pspid=[[pspid]]&amp;activity=ybar-signin" href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-687163491%3A1696903763830504&theme=glif" data-rapid_p="9" data-v9y="1">Iniciar sesión Con Google</a>  </div>
+    </div>
+      <label for="cart-toggle" class="cart-label">
+        <i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i>
+      </label>
+      <input type="checkbox" id="cart-toggle">
+
+      <!-- Nuestro carrito -->
+
+      <div class="cart">
+        <h2>Tus Pedidos</h2>
+
+        <div class="cart-item">
+          <img src="./assets/Pizza-de-anana.jpg"alt="Pedido" />
+
+          <div class="item-info">
+            <h3 class="item-title">Pizza Hawaiana</h3>
+            <p class="item-bid"><Button class="Borrar-item">Borrar item</BUtton></p>
+            <span class="item-price">$6500</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/empanadillas-jamon-queso.jpg" alt="Pedido" />
+
+          <div class="item-info">
+            <h3 class="item-title">Empanada de Jamón y Queso</h3>
+            <p class="item-bid"><Button class="Borrar-item">Borrar item</Button></p>
+            <span class="item-price">$450</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/empanadas-espinaca.jpg" alt="Pedido" />
+
+          <div class="item-info">
+            <h3 class="item-title">Empanada de Espinacas y Queso</h3>
+            <p class="item-bid"><Button class="Borrar-item">Borrar item</Button></p>
+            <span class="item-price">$450</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/pizza-de-pollo.jpg" alt="Pedido" />
+
+          <div class="item-info">
+            <h3 class="item-title">Pizza BBQ</h3>
+            <p class="item-bid"><Button class="Borrar-item">Borrar item</Button></p>
+            <span class="item-price">$6500</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <img src="./assets/empanadas-de-carne.jpg" alt="Pedido" />
+
+          <div class="item-info">
+            <h3 class="item-title">Empanada de Carne</h3>
+            <p class="item-bid"><Button class="Borrar-item">Borrar item</Button></p>
+           
+           <span class="item-price">$450</span>
+          </div>
+
+          <div class="item-handler">
+            <span class="quantity-handler down">-</span>
+            <span class="item-quantity">1</span>
+            <span class="quantity-handler up">+</span>
+          </div>
+        </div>
+
+        <span class="divider"></span>
+
+        <div class="cart-total">
+          <p>Total:</p>
+          <span>$14.350</span>
+        </div>
+
+        <button class="btn-add">Comprar</button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+
+      <div class="hero-info" id="Historia y Acerca de nosotros">
+        <h1>
+          Bienvenido a la Pizzería Don Luigi e Ivanovich la mejor pizzeria del todo el conurbano
+        </h1>
+
+        <p>
+          El lugar perfecto para satisfacer tus antojos de pizza. Nuestra pasión por la pizza se refleja en cada bocado que servimos. Utilizamos ingredientes frescos y de alta calidad para crear las pizzas más deliciosas que puedas imaginar.
+
+          Nuestro menú ofrece una amplia variedad de opciones, desde las clásicas y atemporales pizzas margarita y pepperoni hasta nuestras creaciones únicas con ingredientes frescos y sabrosos. También ofrecemos opciones vegetarianas y veganas para asegurarnos de que todos disfruten de una experiencia culinaria excepcional.
+          
+          En la Pizzería Delicioso, la calidad y el sabor son nuestra prioridad. Cada pizza se hornea a la perfección en nuestro horno de leña para garantizar una corteza crujiente y un sabor auténtico. Además de nuestras pizzas, también ofrecemos una selección de ensaladas frescas, pasta al dente y postres tentadores para complementar tu comida.
+          
+          Te invitamos a explorar nuestro menú y a visitarnos para disfrutar de una experiencia gastronómica inolvidable. Ya sea que estés cenando en nuestro acogedor restaurante o llevando tu pizza favorita a casa, estamos seguros de que te encantará lo que tenemos para ofrecer.</p>
+          
+          Gracias por elegir Pizzería Delicioso. ¡Esperamos verte pronto!</p>
+
+        
+      </div>
+
+      <div class="hero-card">
+        <img src="./assets/Promo-Familiar.jpg" alt="Card example"/>
+
+        <div class="hero-card-info">
+          
+          <div class="hero-card-top">
+            <h3>"12 Empanadas + gaseosa de 1,5 L"</h3>
+            <span>1</span>
+          </div>
+
+
+          <div class="hero-card-price">
+              <p>Precio</p>
+              <span>$3200 la promo</span>
+              <button class="agregar-carrito">Agregar al Carrito</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <h2>Historia de nuestra pizzería</h2>
+<p>Desde su fundación en 1935, Pizzería de Don Luigi y Ivanovich de tradicion italiana y rusa se ha convertido en un icono de la gastronomía local. Nuestra historia comenzó con el sueño de ofrecer auténticas pizzas italianas en el corazón de la ciudad. Durante décadas, hemos trabajado incansablemente para mantener la calidad y la tradición en cada bocado que servimos. Hoy, seguimos siendo un lugar de encuentro para familias y amigos que desean disfrutar de una deliciosa comida y un ambiente acogedor.
+
+    <!-- INFO -->
+    <section id="info">
+    <section>
+      <h2>Sabores de Pizzas</h2>
+      <p>Nuestra pizzería te ofrece una amplia gama de sabores de pizzas para satisfacer todos los gustos. Desde las clásicas y sencillas a las más innovadoras, seguro encontrarás tu favorita. Algunos de nuestros sabores más populares incluyen:</p>
+      <ul>
+          <li><strong>Pizza Margherita:</strong> La auténtica pizza italiana con tomate, mozzarella y albahaca fresca.</li>
+          <li><strong>Pizza Pepperoni:</strong> Cubierta con generosas rodajas de pepperoni, queso derretido y tomate.</li>
+          <li><strong>Pizza Vegetariana:</strong> Una explosión de sabores con champiñones, pimientos, cebolla y aceitunas.</li>
+          <li><strong>Pizza BBQ:</strong> Con pollo a la parrilla, cebolla roja y una deliciosa salsa de barbacoa.</li>
+          <li><strong>Pizza Hawaiana:</strong> La combinación perfecta de piña y jamón, un toque tropical en cada bocado.</li>
+      </ul>
+  
+      <h2>Sabores de Empanadas</h2>
+      <p>Nuestras empanadas son pequeñas delicias llenas de sabor, ideales como aperitivos o comidas ligeras. Descubre nuestra variedad de rellenos de empanadas, que incluyen:</p>
+      <ul>
+          <li><strong>Empanada de Carne:</strong> Rellena de carne molida, cebolla, aceitunas y huevo duro.</li>
+          <li><strong>Empanada de Queso:</strong> Con una mezcla de quesos derretidos que se derriten en tu boca.</li>
+          <li><strong>Empanada de Espinacas y Queso:</strong> Una opción saludable y deliciosa para los amantes de las verduras.</li>
+          <li><strong>Empanada de Pollo con Curry:</strong> Un toque de curry para un sabor exótico y emocionante.</li>
+          <li><strong>Empanada de Jamón y Queso:</strong> Un clásico irresistible para los amantes del jamón y el queso.</li>
+      </ul>
+  
+      <p>En <strong>Nuestra Pizzería</strong>, estamos comprometidos a ofrecerte una experiencia culinaria diversa y deliciosa. ¡Esperamos que disfrutes explorando nuestra lista de sabores de pizzas y empanadas! Te invitamos a visitarnos y probar cada una de estas maravillas culinarias.</p>
+    </section>
+
+
+      <div class="info-cards-container">
+        
+        <div class="info-card">
+          <img src="./assets/pizza-margarita.jpg" alt="Pizza margarita"/>
+          <h3>Condimenta tu pizza a gusto</h3>
+          <p>Nuestro local esta a disposion de la gente para que puedan combinar a los gustos.</p>
+        </div>
+
+        <div class="info-card">
+          <img src="./assets/vegetariana.jpeg" alt="Pizza Vegetariana"/>
+          <h3>Precios baratos y accesibles</h3>
+          <p>Gracias a nuestras promos te podes llevar 2 pizzas de muzzarella + una gaseosa de 2,25 litros por solo $6500.</p>
+        </div>
+
+        <div class="info-card">
+          <img src="./assets/pepperoni-pizza-abob-m.jpg" alt="Pizza de Pepperoni"/>
+          <h3>Condimentos nacionales y chefs internacionales</h3>
+          <p>Nuestros productos junto a nuestros chefs combinan lo nacional con lo internacional .</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DISCOVER -->
+    <section id="discover">
+
+      <div class="discover-info">
+        <h2>Descubre una cantidad de sabores tanto de pizzas como de empanadas</h2>
+
+        <div class="discover-text">
+          <p>
+            "En nuestra acogedora pizzería, llevamos la deliciosa tradición italiana a un nuevo nivel al combinar la perfección de las pizzas con la versatilidad de las empanadas. Nuestro menú es un viaje culinario que te llevará desde la autenticidad de las pizzas de masa fina y crujiente, coronadas con los ingredientes más frescos y sabrosos, hasta la sorpresa de nuestras empanadas, rellenas con una variedad de ingredientes deliciosos y sabores que te transportarán a diferentes rincones del mundo.
+          </p>
+
+          <a href="#">Empezar ahora</a>
+        </div>
+      </div>
+
+      <div class="discover-cards">
+        <img src="./assets/empanadillas-jamon-queso.jpg" alt="empanadillas-jamon-queso">
+        <img src="./assets/pizza-margarita.jpg" alt="Margherita">
+        <img src="./assets/pepperoni-pizza-abob-m.jpg" alt="Pizza de pepperoni">
+      </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products">
+
+      <div class="products-container">
+
+        <!-- Product -->
+        <div class="product">
+          <img src="./assets/Pizza-de-anana.jpg" alt="Sale una de anana" />
+
+          <div class="product-info">
+            <!--Info top-->
+            <div class="product-top">
+              <h3>pizza con anana</h3>
+              
+            </div>
+               <span>$6500</span>
+            </div>
+            <button class="agregar-carrito">Agregar al Carrito</button>
+
+
+            <!--Info bottom-->
+           
+           
+  </main>
+
+  <footer>
+    <div>
+      <ul class="footer-links">
+        <li><a href="#">envios de CV</a></li>
+        <li><a id="Locales y Telefono">Nuestros locales</a></li>
+        <li><a href="#">Central: Calle Falsa 123</a></li>
+        <li><a id="Locales y Telefono">telefono 4000-3500</a></li>
+      </ul>
+    </div>
+
+    <p> Pizzas <i class="fa-solid fa-pizza-slice" style="color: #ff0000;"></i> hechas con amor por parte de los viejos Don luigi e Ivanovich</p>
+  </footer>
+
+</body>
+
+</html>
